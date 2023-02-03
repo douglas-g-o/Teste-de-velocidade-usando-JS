@@ -1,0 +1,99 @@
+:root
+{
+    --bg: #222;
+}
+
+.network {
+    width: 270px;
+    height: 146px;
+    position: absolute;
+    left: 2%;
+    right: 0;
+    top: -71%;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.redes-sociais {
+    height: 7.0625rem;
+    width: 40.3125rem;
+}
+
+.redes-sociais ul
+{
+    position: relative;
+    display: flex;
+    gap: 3.3125rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.redes-sociais ul li{
+    position: relative;
+    list-style: none;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 1.0625rem;
+
+}
+
+.redes-sociais ul li:hover {
+    z-index: 10000;
+    transform: scale(0.65);
+}
+
+.redes-sociais ul li::before {
+    content: '';
+    position: absolute;
+    inset: 1.875rem;
+    box-shadow: 0 0 0 .625rem var(--clr),
+    0 0 0 1.25rem var(--bg),
+    0 0 0 1.375rem var(--clr);
+    transition: 0.5s;
+}
+
+.redes-sociais ul li:hover::before {
+    inset: 0rem;
+}
+
+.redes-sociais ul li::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg);
+
+}
+
+.redes-sociais ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.redes-sociais ul li:hover a {
+    font-size: 3em;
+    filter: drop-shadow(0 0 2.5rem var(--clr)) drop-shadow(0 0 3.75rem var(--clr)) drop-shadow(0 0 5rem var(--clr));
+}
+/*--redes sociais--*/
+
+@media (max-width:26rem) {
+    ul {
+        display: flex   ;
+        flex-direction: column;
+        margin-left: 7rem;
+    }
+
+    .fill {
+        margin-top: 40.9375rem;
+    }
+  }
