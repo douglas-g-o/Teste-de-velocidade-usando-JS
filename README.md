@@ -5,4 +5,4 @@ Teste de velocidade de internet utilizando JavaScript puro.
 Site para ver meu projeto e realizar teste de velocidade:
 https://testedevelocidadejs.netlify.app/
 
-Fique avontade se quiser clonar o projeto e aprimorar os codigos
+Fique avontade para clonar o projeto.
